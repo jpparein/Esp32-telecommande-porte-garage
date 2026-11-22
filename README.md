@@ -19,7 +19,7 @@ Ce dépôt est un **tutoriel complet** : comment ouvrir et fermer une porte de g
 - Une **mise à jour sans câble** (OTA) et une **page de configuration** (Wi-Fi, code) sans fichier secret à écrire dans le code.
 - **Aucun accès depuis Internet** : la porte ne se commande que depuis le réseau de la maison.
 
-![Installation finale](docs/images/installation-finale.jpg)
+![Boîtier de commande installé (ampoule allumée) et ESP32 sur sa plaque d'extension](docs/images/bandeau-accueil.jpg)
 
 ## À qui s'adresse ce tutoriel
 
