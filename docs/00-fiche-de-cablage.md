@@ -10,7 +10,7 @@ Convention de la plaque d'extension : chaque nom imprimé (D27, D34…) correspo
 
 ## 1. Relais KY-019 (commande de la porte)
 
-Connecteur Dupont 3 fils sur le relais. Sur la carte du relais, les broches portent les repères **S**, **+**, **−** (le **S** est le plus proche de la petite LED `Led_1`).
+Connecteur Dupont 3 fils sur le relais. Sur la carte du relais, les broches portent les repères **S**, **+**, **−** (le **S** est le plus proche de la LED `Led_1`).
 
 ![Relais : S, + et − avec la couleur de chaque fil](images/relais-fils-dupont.jpg)
 
