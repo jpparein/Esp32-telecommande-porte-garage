@@ -21,7 +21,7 @@ Ce dépôt est un **tutoriel complet** : comment ouvrir et fermer une porte de g
 <tr><td align="center" valign="top" width="33%"><a href="docs/12-depannage.md"><img src="docs/images/vignettes/12.jpg" width="260" alt="12. Dépannage"><br><b>12. Dépannage</b></a><br><sub>Pannes et solutions</sub></td><td align="center" valign="top" width="33%"><a href="docs/13-histoire-du-projet.md"><img src="docs/images/vignettes/13.jpg" width="260" alt="13. Histoire"><br><b>13. Histoire</b></a><br><sub>Essais et choix</sub></td><td align="center" valign="top" width="33%"><a href="firmware/README.md"><img src="docs/images/vignettes/code.jpg" width="260" alt="Code"><br><b>Code</b></a><br><sub>Fichiers, routes, réglages</sub></td></tr>
 </table>
 
-Une page de démonstration de l'interface (données d'exemple) est dans [`docs/demo/demo.html`](docs/demo/demo.html) : à ouvrir dans un navigateur.
+Une page de démonstration de l'interface (données d'exemple) est dans [`docs/demo/demo.html`](docs/demo/demo.html). GitHub n'en affiche que le code : pour la voir fonctionner, télécharger le fichier (bouton **Download raw file**) puis l'ouvrir dans un navigateur.
 
 ![Du téléphone à la porte](docs/images/schema-architecture.svg)
 
