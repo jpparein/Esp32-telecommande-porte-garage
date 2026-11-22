@@ -2,6 +2,8 @@
 
 Ce dépôt est un **tutoriel complet** : comment ouvrir et fermer une porte de garage motorisée depuis un téléphone (Android ou iPhone), sur le Wi-Fi de la maison, avec un ESP32, un relais et un capteur de lumière. Tout est expliqué pas à pas, avec les photos du montage réel, des schémas et le code commenté.
 
+**Sommaire** : [Ce que fait le projet](#ce-que-fait-le-projet) · [Public visé](#à-qui-sadresse-ce-tutoriel) · [Guides](#les-guides-dans-lordre) · [Démarrage rapide](#démarrage-rapide) · [Matériel testé](#matériel-testé) · [Responsabilité](#responsabilité) · [Fiche de câblage](docs/00-fiche-de-cablage.md) · [Code](firmware/README.md)
+
 ![Du téléphone à la porte](docs/images/schema-architecture.svg)
 
 > **Référence de câblage** : [fiche de câblage](docs/00-fiche-de-cablage.md) (couleur de chaque fil, broche du module, broche de la plaque).
