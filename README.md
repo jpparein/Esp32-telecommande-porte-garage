@@ -1,30 +1,27 @@
-# Commander sa porte de garage depuis un smartphone avec un ESP32
+<h1 align="center">Commander sa porte de garage depuis un smartphone avec un ESP32</h1>
+
+<p align="center"><img src="docs/images/photo-accueil.jpg" width="380" alt="Boîtier de commande installé, ESP32 fixé à sa gauche"></p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/ESP32-DevKit%20V1-1f6feb" alt="ESP32">
+<img src="https://img.shields.io/badge/relais-KY--019-0b6e8a" alt="Relais KY-019">
+<img src="https://img.shields.io/badge/Wi--Fi-r%C3%A9seau%20maison%20seul-2da44e" alt="Réseau maison">
+<img src="https://img.shields.io/badge/co%C3%BBt-%E2%89%88%2014%20%E2%82%AC-8957e5" alt="Coût 14 euros">
+</p>
 
 Ce dépôt est un **tutoriel complet** : comment ouvrir et fermer une porte de garage motorisée depuis un téléphone (Android ou iPhone), sur le Wi-Fi de la maison, avec un ESP32, un relais et un capteur de lumière. Tout est expliqué pas à pas, avec les photos du montage réel, des schémas et le code commenté.
 
-![Boîtier de commande installé (ampoule allumée), ESP32 fixé à sa gauche](docs/images/photo-accueil.jpg)
-
 ## Les guides, dans l'ordre
 
-| # | Guide | Contenu |
-|---|---|---|
-| 0 | [Fiche de câblage](docs/00-fiche-de-cablage.md) | Couleur de chaque fil, broches des modules et de la plaque |
-| 1 | [Principe et choix](docs/01-principe-et-choix.md) | Pourquoi un relais plutôt que copier la télécommande radio |
-| 2 | [Matériel](docs/02-materiel.md) | Liste des pièces, photos, prix réels |
-| 3 | [La carte du boîtier de commande et son interrupteur manuel](docs/03-carte-moteur-et-bouton.md) | Repérer les bonnes pattes, mesures, précautions |
-| 4 | [Branchements de l'ESP32](docs/04-branchements-esp32.md) | Relais et capteur sur la plaque d'extension |
-| 5 | [Souder le relais sur le bouton](docs/05-souder-le-relais.md) | Soudure, contrôles au multimètre |
-| 6 | [Programmer l'ESP32](docs/06-programmer-l-esp32.md) | Arduino IDE, compilation, premier envoi, mises à jour sans câble |
-| 7 | [Premier démarrage et utilisation](docs/07-premier-demarrage-et-utilisation.md) | Wi-Fi, code secret, installer l'appli, simulation |
-| 8 | [HTTPS réseau maison](docs/08-https-reseau-maison.md) | Installer l'appli sur Android, sans ouvrir la porte à Internet |
-| 9 | [Détecteur de mouvement manuel](docs/09-detecteur-mouvement-manuel.md) | Capteur de lumière et étalonnage |
-| 10 | [Installation dans le boîtier](docs/10-installation-dans-le-boitier.md) | Où poser quoi, en sécurité |
-| 11 | [Sécurité et limites](docs/11-securite-et-limites.md) | Ce qui est protégé, ce qui ne l'est pas |
-| 12 | [Dépannage](docs/12-depannage.md) | Les pièges rencontrés et leurs solutions |
-| 13 | [Histoire du projet](docs/13-histoire-du-projet.md) | Les essais, les erreurs, les choix |
+<table>
+<tr><td align="center" valign="top" width="33%"><a href="docs/00-fiche-de-cablage.md"><img src="docs/images/vignettes/00.jpg" width="260" alt="0. Fiche de câblage"><br><b>0. Fiche de câblage</b></a><br><sub>Couleurs des fils, broches</sub></td><td align="center" valign="top" width="33%"><a href="docs/01-principe-et-choix.md"><img src="docs/images/vignettes/01.jpg" width="260" alt="1. Principe et choix"><br><b>1. Principe et choix</b></a><br><sub>Pourquoi un relais</sub></td><td align="center" valign="top" width="33%"><a href="docs/02-materiel.md"><img src="docs/images/vignettes/02.jpg" width="260" alt="2. Matériel"><br><b>2. Matériel</b></a><br><sub>Pièces, prix, liens</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="docs/03-carte-moteur-et-bouton.md"><img src="docs/images/vignettes/03.jpg" width="260" alt="3. Carte et bouton"><br><b>3. Carte et bouton</b></a><br><sub>Repérer les pattes C et D</sub></td><td align="center" valign="top" width="33%"><a href="docs/04-branchements-esp32.md"><img src="docs/images/vignettes/04.jpg" width="260" alt="4. Branchements"><br><b>4. Branchements</b></a><br><sub>Relais et capteur sur la plaque</sub></td><td align="center" valign="top" width="33%"><a href="docs/05-souder-le-relais.md"><img src="docs/images/vignettes/05.jpg" width="260" alt="5. Relais"><br><b>5. Relais</b></a><br><sub>Soudure et contrôles</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="docs/06-programmer-l-esp32.md"><img src="docs/images/vignettes/06.jpg" width="260" alt="6. Programmer"><br><b>6. Programmer</b></a><br><sub>Arduino IDE, envoi, OTA</sub></td><td align="center" valign="top" width="33%"><a href="docs/07-premier-demarrage-et-utilisation.md"><img src="docs/images/vignettes/07.jpg" width="260" alt="7. Utilisation"><br><b>7. Utilisation</b></a><br><sub>Wi-Fi, code, appli</sub></td><td align="center" valign="top" width="33%"><a href="docs/08-https-reseau-maison.md"><img src="docs/images/vignettes/08.jpg" width="260" alt="8. HTTPS"><br><b>8. HTTPS</b></a><br><sub>Appli sur Android</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="docs/09-detecteur-mouvement-manuel.md"><img src="docs/images/vignettes/09.jpg" width="260" alt="9. Lumière"><br><b>9. Lumière</b></a><br><sub>Détecteur de mouvement manuel</sub></td><td align="center" valign="top" width="33%"><a href="docs/10-installation-dans-le-boitier.md"><img src="docs/images/vignettes/10.jpg" width="260" alt="10. Installation"><br><b>10. Installation</b></a><br><sub>Où poser quoi</sub></td><td align="center" valign="top" width="33%"><a href="docs/11-securite-et-limites.md"><img src="docs/images/vignettes/11.jpg" width="260" alt="11. Sécurité"><br><b>11. Sécurité</b></a><br><sub>Protégé / non protégé</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="docs/12-depannage.md"><img src="docs/images/vignettes/12.jpg" width="260" alt="12. Dépannage"><br><b>12. Dépannage</b></a><br><sub>Pannes et solutions</sub></td><td align="center" valign="top" width="33%"><a href="docs/13-histoire-du-projet.md"><img src="docs/images/vignettes/13.jpg" width="260" alt="13. Histoire"><br><b>13. Histoire</b></a><br><sub>Essais et choix</sub></td><td align="center" valign="top" width="33%"><a href="firmware/README.md"><img src="docs/images/vignettes/code.jpg" width="260" alt="Code"><br><b>Code</b></a><br><sub>Fichiers, routes, réglages</sub></td></tr>
+</table>
 
-Le code est dans [`firmware/`](firmware/README.md). Une page de démonstration de l'interface (données d'exemple) est dans [`docs/demo/demo.html`](docs/demo/demo.html) : à ouvrir dans un navigateur.
-
+Une page de démonstration de l'interface (données d'exemple) est dans [`docs/demo/demo.html`](docs/demo/demo.html) : à ouvrir dans un navigateur.
 
 ![Du téléphone à la porte](docs/images/schema-architecture.svg)
 
