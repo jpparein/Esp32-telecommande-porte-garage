@@ -23,6 +23,26 @@ Ce dépôt est un **tutoriel complet** : comment ouvrir et fermer une porte de g
 
 Une page de démonstration de l'interface (données d'exemple) est dans [`docs/demo/demo.html`](docs/demo/demo.html). GitHub n'en affiche que le code : pour la voir fonctionner, télécharger le fichier (bouton **Download raw file**) puis l'ouvrir dans un navigateur.
 
+## Récupérer le projet
+
+- **Sans outil particulier** : sur la page du dépôt, bouton vert **Code**, puis **Download ZIP**. Décompresser l'archive ; le programme est dans `firmware/porte_garage/`. Les versions numérotées sont aussi téléchargeables dans l'onglet **Releases**.
+- **Avec Git** :
+
+```powershell
+git clone https://github.com/jpparein/esp32-telecommande-porte-garage.git
+```
+
+Le programme se compile et s'envoie ensuite à l'ESP32 comme indiqué dans le [guide 6](docs/06-programmer-l-esp32.md). Aucun mot de passe n'est à écrire dans le code : le Wi-Fi et le code secret se règlent depuis la page de configuration de l'ESP32.
+
+## Installer l'application sur le téléphone
+
+L'« application » est une page web hébergée dans l'ESP32 : rien à télécharger dans un magasin d'applications. Une fois l'ESP32 sur le Wi-Fi de la maison ([guide 7](docs/07-premier-demarrage-et-utilisation.md)) :
+
+- **iPhone (Safari)** : ouvrir `http://esp-acces.local` (ou l'adresse IP), toucher **Partager**, puis **Sur l'écran d'accueil**.
+- **Android (Chrome)** : l'installation complète exige une adresse HTTPS ([guide 8](docs/08-https-reseau-maison.md)) ; menu **⋮**, puis **Installer l'application**. Sans HTTPS, seul un raccourci est possible.
+
+Au premier accès, saisir le code secret et un prénom : le téléphone est ensuite mémorisé.
+
 ![Du téléphone à la porte](docs/images/schema-architecture.svg)
 
 > **Référence de câblage** : [fiche de câblage](docs/00-fiche-de-cablage.md) (couleur de chaque fil, broche du module, broche de la plaque).
