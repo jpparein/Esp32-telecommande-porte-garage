@@ -18,7 +18,7 @@
 
 ## Le capteur ne réagit pas
 
-- Il est sur **D34** : S, V, G. Une rangée trop haute, c'est VN : mauvais.
+- Il est sur **D34** : S, V, G. La rangée située juste au-dessus est VN : elle n'est pas lue par le programme.
 - Dans Réglages, consulter la **mesure en direct** ; la valeur doit varier à l'éclairage.
 - Seuil trop haut : le baisser (guide 9).
 
@@ -54,4 +54,4 @@ La fenêtre « après un ordre » est trop courte : l'augmenter (guide 9).
 
 ## L'ESP32 chauffe
 
-Il ne doit pas. Vérifier les branchements, surtout qu'aucun fil 5 V ne va sur une broche de signal 3,3 V.
+Une surchauffe indique un défaut : débrancher, puis vérifier les branchements, surtout qu'aucun fil 5 V ne va sur une broche de signal 3,3 V.

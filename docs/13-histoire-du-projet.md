@@ -22,7 +22,7 @@ Point de vigilance : **ne jamais inverser VCC et GND d'un CC1101** (surchauffe),
 
 ## 3. La solution : un relais en parallèle de l'interrupteur manuel
 
-Le boîtier de commande a un **gros interrupteur manuel** rouge qui appuie sur un micro-interrupteur. Un relais dont les contacts sont montés **en parallèle** de ce micro-interrupteur fait la même chose qu'un doigt, sans toucher aux circuits de sécurité. Les pattes C et D ont été repérées au multimètre (4,98 V continu au repos : entrée basse tension).
+Le boîtier de commande a un **interrupteur manuel** rouge qui appuie sur un micro-interrupteur. Un relais dont les contacts sont montés **en parallèle** de ce micro-interrupteur fait la même chose qu'un doigt, sans toucher aux circuits de sécurité. Les pattes C et D ont été repérées au multimètre (4,98 V continu au repos : entrée basse tension).
 
 ## 4. L'application dans l'ESP32
 

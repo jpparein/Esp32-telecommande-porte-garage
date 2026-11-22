@@ -6,7 +6,7 @@
 
 ## Le boîtier
 
-Le boîtier de commande, fixé au mur, est de marque **Sectio-Tech** (le moteur lui-même est sur la porte). Son capot porte le gros **interrupteur manuel** rouge, l'**ampoule d'éclairage** (dans une fente en haut) et des petits boutons de réglage (Time, Reset, Radio).
+Le boîtier de commande, fixé au mur, est de marque **Sectio-Tech** (le moteur lui-même est sur la porte). Son capot porte l'**interrupteur manuel** rouge, l'**ampoule d'éclairage** (dans une fente en haut) et des petits boutons de réglage (Time, Reset, Radio).
 
 ![Boîtier de commande fermé](images/moteur-boitier-ferme.jpg)
 
@@ -16,11 +16,11 @@ Une fois le capot retiré : la carte électronique est en haut, le **transformat
 
 ## La carte électronique
 
-La carte porte l'inscription **SPRINT IV** et la référence **11515 Rev K**. Aucune notice n'a été trouvée : tout vient de mesures.
+La carte porte l'inscription **SPRINT IV** et la référence **11515 Rev K**. Aucune documentation du constructeur n'a été trouvée : les informations proviennent de mesures.
 
 ![Référence de la carte SPRINT IV](images/carte-sprint-iv-reference.jpg)
 
-Le gros interrupteur manuel **appuie sur un micro-interrupteur** monté sur la carte. Voici ce micro-interrupteur vu côté soudures :
+L'interrupteur manuel **appuie sur un micro-interrupteur** monté sur la carte. Voici ce micro-interrupteur vu côté soudures :
 
 ![Côté soudures du micro-interrupteur](images/carte-sprint-iv-soudures.jpg)
 
@@ -29,7 +29,7 @@ Le gros interrupteur manuel **appuie sur un micro-interrupteur** monté sur la c
 Un micro-interrupteur a 4 pattes, reliées deux par deux. Il faut trouver la **paire qui se ferme à l'appui**.
 
 1. **Courant coupé**, multimètre en **continuité** (bip).
-2. Toucher deux pattes avec les pointes et enfoncer le bouton avec un tournevis isolé ou le doigt côté capot (carte déposée si besoin).
+2. Toucher deux pattes avec les pointes et enfoncer le bouton avec un tournevis isolé, ou en actionnant le bouton depuis le capot (carte déposée si nécessaire).
 3. Noter les deux pattes qui **bipent seulement quand le bouton est enfoncé**.
 
 ![Pattes du micro-interrupteur : A, B à gauche, C, D à droite](images/poussoir-pattes-ABCD.jpg)
@@ -44,9 +44,9 @@ Sur cette carte, ce sont **C** et **D**. Ce sont les deux pattes à doubler avec
 
 Interprétation : une patte est à environ 5 V (résistance de rappel), l'autre est à la masse de la carte. Un appui relie les deux. C'est une **entrée de bouton en basse tension**.
 
-Le **contact sec du relais** (10 A / 30 V DC) convient largement : il ferme simplement C et D, comme le bouton.
+Le **contact sec du relais** (10 A / 30 V DC) est très supérieur au besoin (5 V, quelques mA) : il ferme C et D, comme le bouton.
 
-Remettre ensuite le courant sur arrêt.
+Couper ensuite le courant.
 
 ## À ne pas faire
 

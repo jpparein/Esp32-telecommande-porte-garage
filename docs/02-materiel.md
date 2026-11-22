@@ -9,7 +9,7 @@
 | **ESP32** (DevKit V1, 30 broches, ESP32-WROOM-32, USB-C, puce USB-série CH340) | Cerveau : Wi-Fi, page web, relais, capteur | Port USB-C pour la programmation |
 | **Plaque d'extension** à rangées G / V / S | Brancher les modules sans soudure | Avec cavalier de tension (3,3 V / 5 V) |
 | **Relais KY-019** (SRD-05VDC) | Actionne l'interrupteur manuel du boîtier de commande | Bobine 5 V, actif à l'état haut, contacts 10 A / 30 V DC |
-| **Capteur de lumière KY-018** | Voir l'ampoule du boîtier de commande s'allumer | Photorésistance sur petite carte à 3 broches |
+| **Capteur de lumière KY-018** | Voir l'ampoule du boîtier de commande s'allumer | Photorésistance sur carte à 3 broches |
 | Fils **Dupont** femelle-femelle | Relier les modules à la plaque | Une quinzaine |
 | Fil fin (environ 0,5 mm²) | Relais vers l'interrupteur manuel du boîtier | 2 fils, 20 à 50 cm |
 | **Chargeur USB** 5 V (1 A) et câble USB-C | Alimenter l'ESP32 | Sur une prise proche |
@@ -33,9 +33,9 @@
 
 Achat minimal si aucune pièce n'est disponible (un lot de chaque, kit ESP32 compris) : 15,99 + 5,88 + 15,59 + 7,99 = 45,45 €. Les prix Amazon varient : à revérifier sur les liens avant achat. Les modules « photorésistance numérique » (DollaTek, sortie DO/AO sur LM393) ne sont **pas** équivalents : le KY-018 a 3 broches (S, +, -) et une sortie analogique seule.
 
-À comparer avec une télécommande d'origine de remplacement ou un module Wi-Fi du commerce, qui ne se branchent pas toujours sur cette motorisation.
+Une télécommande de remplacement ou un module Wi-Fi du commerce n'est pas toujours compatible avec cette motorisation ; ce montage n'utilise que l'entrée de l'interrupteur manuel.
 
-Pour la configuration optionnelle (HTTPS, guide 8) : un petit serveur sur le réseau (ici un Raspberry Pi avec Nginx Proxy Manager) et un nom de domaine gratuit (DuckDNS).
+Pour la configuration optionnelle (HTTPS, guide 8) : un serveur sur le réseau (ici un Raspberry Pi avec Nginx Proxy Manager) et un nom de domaine gratuit (DuckDNS).
 
 ## Photos des pièces
 
@@ -47,7 +47,7 @@ La plaque a **trois rangées** de broches pour chaque borne de l'ESP32 : **S** (
 
 ![Plaque : cavalier 3,3 V et bloc 5 V / GND](images/plaque-cavalier-et-bloc-5v.jpg)
 
-Le petit **bloc de broches repéré 5V / 3.3V / GND**, près du cavalier JUMP, donne le **5 V** et le **GND** (masse) : c'est là que se branche l'alimentation du relais.
+Le **bloc de broches repéré 5V / 3.3V / GND**, près du cavalier JUMP, donne le **5 V** et le **GND** (masse) : c'est là que se branche l'alimentation du relais.
 
 ### Relais KY-019
 

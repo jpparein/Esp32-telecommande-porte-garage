@@ -9,7 +9,7 @@
 | **ESP32** (DevKit V1, 30 pins, ESP32-WROOM-32, USB-C, CH340 USB-serial chip) | Brain: Wi-Fi, web page, relay, sensor | USB-C port for programming |
 | **Expansion board** with G / V / S rows | Plug modules without soldering | With voltage jumper (3.3 V / 5 V) |
 | **KY-019 relay** (SRD-05VDC) | Operates the control unit manual switch | 5 V coil, active high, contacts 10 A / 30 V DC |
-| **KY-018 light sensor** | Sees the control unit lamp turn on | Photoresistor on a small 3-pin board |
+| **KY-018 light sensor** | Sees the control unit lamp turn on | Photoresistor on a 3-pin board |
 | Female-female **Dupont** wires | Connect modules to the board | About fifteen |
 | Thin wire (about 0.5 mm²) | Relay to the control unit manual switch | 2 wires, 20 to 50 cm |
 | 5 V (1 A) **USB charger** and USB-C cable | Power the ESP32 | On a nearby socket |
@@ -33,9 +33,9 @@
 
 Minimum purchase if no part is available (one pack of each, ESP32 kit included): 15.99 + 5.88 + 15.59 + 7.99 = €45.45. Amazon prices vary: check the links before buying. "Digital photoresistor" modules (DollaTek, DO/AO output on LM393) are **not** equivalent: the KY-018 has 3 pins (S, +, −) and an analog-only output.
 
-For comparison, a replacement original remote or a commercial Wi-Fi module does not always fit this motorisation.
+A replacement remote or a commercial Wi-Fi module is not always compatible with this motorisation; this assembly only uses the manual switch input.
 
-For the optional setup (HTTPS, guide 8): a small server on the network (here a Raspberry Pi with Nginx Proxy Manager) and a free domain name (DuckDNS).
+For the optional setup (HTTPS, guide 8): a server on the network (here a Raspberry Pi with Nginx Proxy Manager) and a free domain name (DuckDNS).
 
 ## Photos of the parts
 
@@ -47,7 +47,7 @@ The board has **three rows** of pins for each ESP32 terminal: **S** (signal, the
 
 ![Board: 3.3 V jumper and 5 V / GND block](../images/plaque-cavalier-et-bloc-5v.jpg)
 
-The small **block of pins marked 5V / 3.3V / GND**, next to the JUMP jumper, provides **5 V** and **GND** (ground): this is where the relay power supply is connected.
+The **block of pins marked 5V / 3.3V / GND**, next to the JUMP jumper, provides **5 V** and **GND** (ground): this is where the relay power supply is connected.
 
 ### KY-019 relay
 

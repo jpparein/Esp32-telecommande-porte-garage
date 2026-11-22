@@ -28,7 +28,7 @@ Le module CC1101 a quand même servi à des essais (voir [Histoire du projet](13
 
 ## Deuxième idée : un relais sur le bouton du boîtier de commande (retenue)
 
-Le boîtier de commande a un **gros interrupteur manuel** rouge sur son capot. Il appuie sur un micro-interrupteur de la carte électronique. Un **relais en parallèle** de ce micro-interrupteur, l'ESP32 peut « appuyer » à la place du doigt.
+Le boîtier de commande a un **interrupteur manuel** rouge sur son capot. Il appuie sur un micro-interrupteur de la carte électronique. Un **relais en parallèle** de ce micro-interrupteur permet à l'ESP32 d'« appuyer » à la place d'une personne.
 
 ![Le relais en parallèle de l'interrupteur manuel](images/schema-relais-en-parallele.svg)
 
@@ -48,4 +48,4 @@ Pour savoir si la porte a bougé sans passer par l'appli, un **capteur de lumiè
 
 ![Architecture](images/schema-architecture.svg)
 
-L'ESP32 héberge une petite page web. Le téléphone s'y connecte par le Wi-Fi de la maison. Facultatif : un proxy HTTPS (guide 8) devant l'ESP32, restreint au réseau de la maison, permet d'installer l'appli sur Android.
+L'ESP32 héberge une page web légère. Le téléphone s'y connecte par le Wi-Fi de la maison. Facultatif : un proxy HTTPS (guide 8) devant l'ESP32, restreint au réseau de la maison, permet d'installer l'appli sur Android.

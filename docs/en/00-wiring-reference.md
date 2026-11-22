@@ -10,7 +10,7 @@ Expansion board convention: each printed name (D27, D34...) corresponds to **3 p
 
 ## 1. KY-019 relay (door command)
 
-3-wire Dupont connector on the relay. On the relay board the pins are marked **S**, **+**, **−** (**S** is the closest to the small `Led_1` LED).
+3-wire Dupont connector on the relay. On the relay board the pins are marked **S**, **+**, **−** (**S** is the closest to the `Led_1` LED).
 
 ![Relay: S, + and − with the colour of each wire](../images/relais-fils-dupont.jpg)
 

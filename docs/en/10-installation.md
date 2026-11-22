@@ -2,7 +2,7 @@
 
 [Version française](../10-installation-dans-le-boitier.md)
 
-## Idea
+## Layout
 
 The relay and the sensor are inside the control unit; the ESP32 and its board are fixed **to the wall, next to the unit** (photo below, at night: the control unit lamp is on). The wires enter the unit from the top.
 

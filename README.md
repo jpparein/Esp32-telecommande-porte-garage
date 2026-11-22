@@ -53,7 +53,7 @@ Au premier accès, saisir le code secret et un prénom : le téléphone est ensu
 
 ## Ce que fait le projet
 
-- Une **page web hébergée dans l'ESP32** (installable comme une appli sur Android et sur iPhone) avec un gros bouton **Ouvrir** et un bouton **Fermer**.
+- Une **page web hébergée dans l'ESP32** (installable comme une appli sur Android et sur iPhone) avec un bouton **Ouvrir** et un bouton **Fermer**.
 - Un **code secret** et un **prénom par téléphone** : l'historique dit qui a donné chaque ordre.
 - Un **historique de 100 évènements** gardé en mémoire (même après une coupure de courant), exportable en CSV.
 - Un **relais** branché en parallèle de l'interrupteur manuel du boîtier de commande : il fait exactement le même effet qu'un appui.

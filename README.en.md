@@ -53,7 +53,7 @@ On first access, enter the secret code and a first name: the phone is then remem
 
 ## What the project does
 
-- A **web page hosted in the ESP32** (installable as an app on Android and iPhone) with a large **Open** button and a **Close** button.
+- A **web page hosted in the ESP32** (installable as an app on Android and iPhone) with an **Open** button and a **Close** button.
 - A **secret code** and a **first name per phone**: the history says who gave each command.
 - A **history of 100 events** kept in memory (even after a power cut), exportable as CSV.
 - A **relay** wired in parallel with the control unit manual switch: it has exactly the same effect as a press.

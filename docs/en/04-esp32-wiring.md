@@ -2,7 +2,7 @@
 
 [Version française](../04-branchements-esp32.md)
 
-The assembly is first built **away from the installation** (as a bench test), without touching the motorisation. The relay, its "free" contacts and the sensor can be tested perfectly well on their own.
+The assembly is first built **away from the installation** (as a bench test), without touching the motorisation. The relay, its "free" contacts and the sensor can be tested separately.
 
 ![Bench setup](../images/montage-banc-essai.jpg)
 
@@ -49,7 +49,7 @@ The relay coil is designed for **5 V**. The command signal (S pin) can come from
 
 ![Dupont wires on the relay](../images/relais-fils-dupont.jpg)
 
-On the relay board: **S** is the pin **next to the small LED** (`Led_1`), **+** is the **middle** pin, **−** is the pin **opposite the LED**. Always check against the symbols printed on the board.
+On the relay board: **S** is the pin **next to the LED** (`Led_1`), **+** is the **middle** pin, **−** is the pin **opposite the LED**. Always check against the symbols printed on the board.
 
 ![Relay pins: −, + and S](../images/relais-broches-repere.jpg)
 

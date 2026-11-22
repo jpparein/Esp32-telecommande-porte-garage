@@ -18,7 +18,7 @@
 
 ## The sensor does not react
 
-- It is on **D34**: S, V, G. One row too high is VN: wrong.
+- It is on **D34**: S, V, G. The row just above is VN: it is not read by the program.
 - In Settings, look at the **live measurement**; the value must change with the lighting.
 - Threshold too high: lower it (guide 9).
 
@@ -54,4 +54,4 @@ The "after a command" window is too short: increase it (guide 9).
 
 ## The ESP32 gets hot
 
-It must not. Check the wiring, especially that no 5 V wire goes to a 3.3 V signal pin.
+Overheating indicates a fault: unplug, then check the wiring, especially that no 5 V wire goes to a 3.3 V signal pin.

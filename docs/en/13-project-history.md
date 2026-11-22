@@ -22,7 +22,7 @@ Watch point: **never swap VCC and GND on a CC1101** (overheating), and identify 
 
 ## 3. The solution: a relay in parallel with the manual switch
 
-The control unit has a **large red manual switch** that presses a micro-switch. A relay whose contacts are wired **in parallel** with this micro-switch does the same as a finger, without touching the safety circuits. Legs C and D were identified with the multimeter (4.98 V DC at rest: low-voltage input).
+The control unit has a red **manual switch** that presses a micro-switch. A relay whose contacts are wired **in parallel** with this micro-switch does the same as a finger, without touching the safety circuits. Legs C and D were identified with the multimeter (4.98 V DC at rest: low-voltage input).
 
 ## 4. The application in the ESP32
 

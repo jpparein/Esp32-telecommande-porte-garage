@@ -9,7 +9,7 @@
 A new ESP32 (or after a long press on BOOT) opens its own open Wi-Fi network named **`ESP-Config`**:
 
 1. On the phone, connect to **`ESP-Config`**.
-2. Open **`http://192.168.4.1`**. The phone's system tries to open the configuration page by itself (captive portal) by querying a test address: `generate_204` on Android, `hotspot-detect.html` on iOS, `connecttest.txt` on Windows. The unit answers these three requests. If the window does not open (private DNS enabled, mobile data taking priority, or a system version that does not show it), type the address by hand in the browser.
+2. Open **`http://192.168.4.1`**. The phone's system tries to open the configuration page by itself (captive portal) by querying a test address: `generate_204` on Android, `hotspot-detect.html` on iOS, `connecttest.txt` on Windows. The ESP32 answers these three requests. If the window does not open (private DNS enabled, mobile data taking priority, or a system version that does not show it), type the address by hand in the browser.
 3. Fill in:
    - the **home Wi-Fi name**: typed, or chosen from the network search. A **hidden** network is typed by hand;
    - its **password**;
@@ -53,7 +53,7 @@ A cookie belongs to one address: when using both `http://esp-acces.local` **and*
 
 ![Door screen: Open and Close buttons, state, last activity](../images/appli-porte.png)
 
-The animation illustrates the command sent, not the real position. The "Prête" (ready) badge indicates that the unit accepts a command.
+The animation illustrates the command sent, not the real position. The "Prête" (ready) badge indicates that the ESP32 accepts a command.
 
 ### History screen
 
@@ -65,7 +65,7 @@ Each line shows the event, the person concerned and the timestamp. Event types: 
 
 ![Settings: appearance, simulation mode, movement detector](../images/appli-reglages-1.png)
 
-![Settings: unit connection, indicator, BOOT button](../images/appli-reglages-2.png)
+![Settings: ESP32 connection, indicator, BOOT button](../images/appli-reglages-2.png)
 
 ## Simulation mode
 

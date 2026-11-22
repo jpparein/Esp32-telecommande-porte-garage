@@ -7,7 +7,7 @@
 Un ESP32 neuf (ou après un appui long sur BOOT) ouvre son propre Wi-Fi ouvert, nommé **`ESP-Config`** :
 
 1. Sur le téléphone, se connecter à **`ESP-Config`**.
-2. Ouvrir **`http://192.168.4.1`**. Le système du téléphone tente d'ouvrir seul la page de configuration (portail captif) en interrogeant une adresse de test : `generate_204` sur Android, `hotspot-detect.html` sur iOS, `connecttest.txt` sur Windows. Le boîtier répond à ces trois requêtes. Si la fenêtre ne s'ouvre pas (DNS privé actif, données mobiles prioritaires, ou version du système qui ne l'affiche pas), saisir l'adresse à la main dans le navigateur.
+2. Ouvrir **`http://192.168.4.1`**. Le système du téléphone tente d'ouvrir seul la page de configuration (portail captif) en interrogeant une adresse de test : `generate_204` sur Android, `hotspot-detect.html` sur iOS, `connecttest.txt` sur Windows. L'ESP32 répond à ces trois requêtes. Si la fenêtre ne s'ouvre pas (DNS privé actif, données mobiles prioritaires, ou version du système qui ne l'affiche pas), saisir l'adresse à la main dans le navigateur.
 3. Renseigner :
    - le **nom du Wi-Fi de la maison** : à saisir, ou à choisir dans la recherche des réseaux. Un réseau **caché** se saisit à la main ;
    - son **mot de passe** ;
@@ -51,7 +51,7 @@ Un cookie est propre à chaque adresse : en cas d'utilisation de `http://esp-acc
 
 ![Écran Porte : boutons Ouvrir et Fermer, état, dernière activité](images/appli-porte.png)
 
-L'animation illustre la commande envoyée, pas la position réelle. La pastille « Prête » indique que le boîtier accepte un ordre.
+L'animation illustre la commande envoyée, pas la position réelle. La pastille « Prête » indique que l'ESP32 accepte un ordre.
 
 ### Écran Historique
 
@@ -63,7 +63,7 @@ Chaque ligne indique l'évènement, la personne concernée et l'horodatage. Type
 
 ![Réglages : apparence, mode simulation, détecteur de mouvement](images/appli-reglages-1.png)
 
-![Réglages : connexion du boîtier, voyant, bouton BOOT](images/appli-reglages-2.png)
+![Réglages : connexion de l'ESP32, voyant, bouton BOOT](images/appli-reglages-2.png)
 
 ## Le mode simulation
 

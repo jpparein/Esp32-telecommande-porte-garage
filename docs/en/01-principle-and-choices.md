@@ -28,7 +28,7 @@ The CC1101 module was still used for tests (see [Project history](13-project-his
 
 ## Second idea: a relay on the control unit button (chosen)
 
-The control unit has a **large red manual switch** on its cover. It presses a micro-switch on the electronic board. With a **relay in parallel** with this micro-switch, the ESP32 can "press" in place of a finger.
+The control unit has a red **manual switch** on its cover. It presses a micro-switch on the electronic board. A **relay in parallel** with this micro-switch lets the ESP32 "press" in place of a person.
 
 ![The relay in parallel with the manual switch](../images/schema-relais-en-parallele-en.svg)
 
@@ -48,4 +48,4 @@ To know whether the door moved without going through the app, a **light sensor**
 
 ![Architecture](../images/schema-architecture-en.svg)
 
-The ESP32 hosts a small web page. The phone connects to it over the home Wi-Fi. Optionally, an HTTPS proxy (guide 8) in front of the ESP32, restricted to the home network, allows installing the app on Android.
+The ESP32 hosts a lightweight web page. The phone connects to it over the home Wi-Fi. Optionally, an HTTPS proxy (guide 8) in front of the ESP32, restricted to the home network, allows installing the app on Android.

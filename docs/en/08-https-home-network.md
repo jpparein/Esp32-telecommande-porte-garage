@@ -2,7 +2,7 @@
 
 [Version française](../08-https-reseau-maison.md)
 
-The ESP32 speaks plain HTTP. To **install the app as a real application** on Android (and get the padlock), an **HTTPS** address is needed. A "reverse proxy" is therefore added on a small home server (here a Raspberry Pi with Docker). **This guide is optional.**
+The ESP32 speaks plain HTTP. To **install the app as a real application** on Android (and get the padlock), an **HTTPS** address is needed. A "reverse proxy" is therefore added on a home server (here a Raspberry Pi with Docker). **This guide is optional.**
 
 ![Architecture](../images/schema-architecture-en.svg)
 

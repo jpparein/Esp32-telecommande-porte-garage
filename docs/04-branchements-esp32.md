@@ -2,7 +2,7 @@
 
 [English version](en/04-esp32-wiring.md)
 
-Le montage se réalise d'abord **hors installation** (en banc d'essai), sans toucher à la motorisation. Le relais, ses contacts « libres » et le capteur se testent très bien seuls.
+Le montage se réalise d'abord **hors installation** (en banc d'essai), sans toucher à la motorisation. Le relais, ses contacts « libres » et le capteur peuvent se tester séparément.
 
 ![Montage en banc d'essai](images/montage-banc-essai.jpg)
 
@@ -49,7 +49,7 @@ La bobine du relais est prévue pour **5 V**. Le signal de commande (broche S) p
 
 ![Fils Dupont sur le relais](images/relais-fils-dupont.jpg)
 
-Repérage sur la carte du relais : **S** est la broche **voisine de la petite LED** (`Led_1`), **+** est la broche du **milieu**, **−** est la broche **opposée à la LED**. Toujours vérifier avec les symboles imprimés sur la carte.
+Repérage sur la carte du relais : **S** est la broche **voisine de la LED** (`Led_1`), **+** est la broche du **milieu**, **−** est la broche **opposée à la LED**. Toujours vérifier avec les symboles imprimés sur la carte.
 
 ![Broches du relais : −, + et S](images/relais-broches-repere.jpg)
 
