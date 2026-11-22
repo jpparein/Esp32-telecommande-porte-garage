@@ -2,7 +2,29 @@
 
 Ce dépôt est un **tutoriel complet** : comment ouvrir et fermer une porte de garage motorisée depuis un téléphone (Android ou iPhone), sur le Wi-Fi de la maison, avec un ESP32, un relais et un capteur de lumière. Tout est expliqué pas à pas, avec les photos du montage réel, des schémas et le code commenté.
 
-**Sommaire** : [Ce que fait le projet](#ce-que-fait-le-projet) · [Public visé](#à-qui-sadresse-ce-tutoriel) · [Guides](#les-guides-dans-lordre) · [Démarrage rapide](#démarrage-rapide) · [Matériel testé](#matériel-testé) · [Responsabilité](#responsabilité) · [Fiche de câblage](docs/00-fiche-de-cablage.md) · [Code](firmware/README.md)
+![Boîtier de commande installé (ampoule allumée), ESP32 fixé à sa gauche](docs/images/photo-accueil.jpg)
+
+## Les guides, dans l'ordre
+
+| # | Guide | Contenu |
+|---|---|---|
+| 0 | [Fiche de câblage](docs/00-fiche-de-cablage.md) | Couleur de chaque fil, broches des modules et de la plaque |
+| 1 | [Principe et choix](docs/01-principe-et-choix.md) | Pourquoi un relais plutôt que copier la télécommande radio |
+| 2 | [Matériel](docs/02-materiel.md) | Liste des pièces, photos, prix réels |
+| 3 | [La carte du boîtier de commande et son interrupteur manuel](docs/03-carte-moteur-et-bouton.md) | Repérer les bonnes pattes, mesures, précautions |
+| 4 | [Branchements de l'ESP32](docs/04-branchements-esp32.md) | Relais et capteur sur la plaque d'extension |
+| 5 | [Souder le relais sur le bouton](docs/05-souder-le-relais.md) | Soudure, contrôles au multimètre |
+| 6 | [Programmer l'ESP32](docs/06-programmer-l-esp32.md) | Arduino IDE, compilation, premier envoi, mises à jour sans câble |
+| 7 | [Premier démarrage et utilisation](docs/07-premier-demarrage-et-utilisation.md) | Wi-Fi, code secret, installer l'appli, simulation |
+| 8 | [HTTPS réseau maison](docs/08-https-reseau-maison.md) | Installer l'appli sur Android, sans ouvrir la porte à Internet |
+| 9 | [Détecteur de mouvement manuel](docs/09-detecteur-mouvement-manuel.md) | Capteur de lumière et étalonnage |
+| 10 | [Installation dans le boîtier](docs/10-installation-dans-le-boitier.md) | Où poser quoi, en sécurité |
+| 11 | [Sécurité et limites](docs/11-securite-et-limites.md) | Ce qui est protégé, ce qui ne l'est pas |
+| 12 | [Dépannage](docs/12-depannage.md) | Les pièges rencontrés et leurs solutions |
+| 13 | [Histoire du projet](docs/13-histoire-du-projet.md) | Les essais, les erreurs, les choix |
+
+Le code est dans [`firmware/`](firmware/README.md). Une page de démonstration de l'interface (données d'exemple) est dans [`docs/demo/demo.html`](docs/demo/demo.html) : à ouvrir dans un navigateur.
+
 
 ![Du téléphone à la porte](docs/images/schema-architecture.svg)
 
@@ -21,33 +43,11 @@ Ce dépôt est un **tutoriel complet** : comment ouvrir et fermer une porte de g
 - Une **mise à jour sans câble** (OTA) et une **page de configuration** (Wi-Fi, code) sans fichier secret à écrire dans le code.
 - **Aucun accès depuis Internet** : la porte ne se commande que depuis le réseau de la maison.
 
-![Boîtier de commande installé (ampoule allumée), ESP32 fixé à sa gauche](docs/images/photo-accueil.jpg)
-
 ## À qui s'adresse ce tutoriel
 
 À un débutant en électronique qui sait suivre une notice. Il faut savoir souder un fil fin, utiliser un multimètre (mesure de tension et test de continuité) et installer l'IDE Arduino. Chaque étape dit ce qu'il faut vérifier avant de passer à la suivante.
 
 > **Attention : sécurité.** Une motorisation de porte est alimentée en 230 V. Ce montage ne touche **que la partie basse tension** (l'interrupteur manuel, environ 5 V), **courant coupé** pour toute soudure. Ne **jamais** contourner la cellule de sécurité de la motorisation. Lire le guide [Sécurité et limites](docs/11-securite-et-limites.md) avant de commencer.
-
-## Les guides, dans l'ordre
-
-| # | Guide | Contenu |
-|---|---|---|
-| 1 | [Principe et choix](docs/01-principe-et-choix.md) | Pourquoi un relais plutôt que copier la télécommande radio |
-| 2 | [Matériel](docs/02-materiel.md) | Liste des pièces, photos, prix réels |
-| 3 | [La carte du boîtier de commande et son interrupteur manuel](docs/03-carte-moteur-et-bouton.md) | Repérer les bonnes pattes, mesures, précautions |
-| 4 | [Branchements de l'ESP32](docs/04-branchements-esp32.md) | Relais et capteur sur la plaque d'extension |
-| 5 | [Souder le relais sur le bouton](docs/05-souder-le-relais.md) | Soudure, contrôles au multimètre |
-| 6 | [Programmer l'ESP32](docs/06-programmer-l-esp32.md) | Arduino IDE, compilation, premier envoi, mises à jour sans câble |
-| 7 | [Premier démarrage et utilisation](docs/07-premier-demarrage-et-utilisation.md) | Wi-Fi, code secret, installer l'appli, simulation |
-| 8 | [HTTPS réseau maison](docs/08-https-reseau-maison.md) | Installer l'appli sur Android, sans ouvrir la porte à Internet |
-| 9 | [Détecteur de mouvement manuel](docs/09-detecteur-mouvement-manuel.md) | Capteur de lumière et étalonnage |
-| 10 | [Installation dans le boîtier](docs/10-installation-dans-le-boitier.md) | Où poser quoi, en sécurité |
-| 11 | [Sécurité et limites](docs/11-securite-et-limites.md) | Ce qui est protégé, ce qui ne l'est pas |
-| 12 | [Dépannage](docs/12-depannage.md) | Les pièges rencontrés et leurs solutions |
-| 13 | [Histoire du projet](docs/13-histoire-du-projet.md) | Les essais, les erreurs, les choix |
-
-Le code est dans [`firmware/`](firmware/README.md). Une page de démonstration de l'interface (données d'exemple) est dans [`docs/demo/demo.html`](docs/demo/demo.html) : à ouvrir dans un navigateur.
 
 ## Démarrage rapide
 
