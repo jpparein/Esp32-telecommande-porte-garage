@@ -281,8 +281,8 @@ nav button span{font-size:22px;line-height:1}nav button.active{background:rgba(6
       else if(u==='/impulsion'){var s=/sens=(\w+)/.exec(b);s=s?s[1]:'';hist.unshift({h:maintenant(),t:(s==='fermeture'?'Fermeture':'Ouverture')+' (Paul'+(sim?', simulation':'')+')'});res(rep(true,sim?'Simulation : relais non activé.':'Ordre envoyé.'));}
       else if(u==='/simulation'){if(o&&o.method==='POST'){sim=/actif=1/.test(b);simFin=Date.now()+30*60000;}if(sim&&Date.now()>simFin)sim=false;res(rep(true,sim?'1 '+Math.max(1,Math.round((simFin-Date.now())/60000)):'0'));}
       else if(u==='/effacer-historique'){hist=[{h:maintenant(),t:'Historique effacé (Paul)'}];res(rep(true,'Historique effacé.'));}
-      else if(u==='/wifi')res(rep(true,'Bbox-DCB9EC67'));
-      else if(u==='/reseaux')res(rep(true,['Bbox-DCB9EC67','TP-Link_Jardin','Asus'].join(NLm)));
+      else if(u==='/wifi')res(rep(true,'MonWiFi'));
+      else if(u==='/reseaux')res(rep(true,['MonWiFi','Voisin-1','Voisin-2'].join(NLm)));
       else res(rep(true,'Enregistré (demo).'));
     },350);});
   };
