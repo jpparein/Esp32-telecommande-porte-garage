@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Inter, Arial, sans-serif">
+<title>Wiring: ESP32, relay and light sensor</title>
+<rect width="1200" height="780" fill="#ffffff"/>
+<text x="40" y="44" font-size="26" font-weight="700" fill="#1d2328">Wiring: ESP32, relay and light sensor</text>
+<text x="40" y="70" font-size="14" fill="#5c6770">Wire colours = real colours. Unplug USB before touching a wire.</text>
+
+<!-- PLAQUE -->
+<rect x="40" y="100" width="330" height="560" rx="10" fill="#1c1f23"/>
+<text x="60" y="130" font-size="16" font-weight="700" fill="#ffffff">ESP32 expansion board</text>
+<text x="60" y="150" font-size="12" fill="#aab3ba">Each name has 3 pins: S (signal), V (3.3 V), G (ground)</text>
+<text x="70" y="215" font-size="22" font-weight="700" fill="#ffffff">D34</text>
+<text x="70" y="236" font-size="12" fill="#aab3ba">(GPIO34, analog input)</text>
+<text x="70" y="345" font-size="22" font-weight="700" fill="#ffffff">D27</text>
+<text x="70" y="366" font-size="12" fill="#aab3ba">(GPIO27, relay output)</text>
+<g fill="#d4af37">
+<circle cx="370" cy="190" r="11"/><circle cx="370" cy="225" r="11"/><circle cx="370" cy="260" r="11"/>
+<circle cx="370" cy="320" r="11"/><circle cx="370" cy="355" r="11"/><circle cx="370" cy="390" r="11"/>
+<circle cx="370" cy="470" r="11"/><circle cx="370" cy="510" r="11"/>
+</g>
+<g font-size="14" font-weight="700" fill="#ffffff" text-anchor="end">
+<text x="347" y="195">S</text><text x="347" y="230">V</text><text x="347" y="265">G</text>
+<text x="347" y="325">S</text><text x="347" y="360">V</text><text x="347" y="395">G</text>
+<text x="347" y="475">5V</text><text x="347" y="515">GND</text>
+</g>
+<text x="60" y="478" font-size="16" font-weight="700" fill="#ffffff">Power block</text>
+<text x="60" y="498" font-size="12" fill="#aab3ba">(next to the JUMP jumper)</text>
+<text x="60" y="570" font-size="13" fill="#ffd166">"JUMP" jumper on 3.3 V</text>
+<text x="60" y="600" font-size="13" fill="#ffd166">USB: the ESP32's own USB-C port</text>
+<text x="60" y="622" font-size="12" fill="#aab3ba">(not the board's one)</text>
+
+<!-- CAPTEUR -->
+<rect x="820" y="150" width="320" height="140" rx="10" fill="#f1f3f5" stroke="#9aa5ad" stroke-width="2"/>
+<text x="845" y="182" font-size="18" font-weight="700" fill="#1d2328">KY-018 light sensor</text>
+<text x="845" y="274" font-size="12" fill="#5c6770">Placed against the control unit lamp</text>
+<g font-size="14" font-weight="700" fill="#1d2328"><text x="845" y="195">S</text><text x="845" y="230">+ (middle)</text><text x="845" y="265">−</text></g>
+<g fill="#d4af37"><circle cx="820" cy="190" r="11"/><circle cx="820" cy="225" r="11"/><circle cx="820" cy="260" r="11"/></g>
+<path d="M370,190 H820" stroke="#12a5a8" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M370,225 H820" stroke="#f2c200" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M370,260 H820" stroke="#f07c1a" stroke-width="7" fill="none" stroke-linecap="round"/>
+<g font-size="13" fill="#1d2328" font-weight="700">
+<text x="450" y="180">turquoise: D34-S to S</text>
+<text x="450" y="215">yellow: D34-V to +</text>
+<text x="450" y="250">orange: D34-G to −</text></g>
+
+<!-- RELAIS -->
+<rect x="820" y="310" width="320" height="260" rx="10" fill="#e8f1fb" stroke="#4c8bd4" stroke-width="2"/>
+<text x="845" y="342" font-size="18" font-weight="700" fill="#1d2328">KY-019 relay (5 V coil)</text>
+<text x="845" y="366" font-size="12" fill="#5c6770">Active high. LED on = relay energised.</text>
+<g font-size="14" font-weight="700" fill="#1d2328"><text x="845" y="395">S (next to the small LED)</text><text x="845" y="435">+ (middle)</text><text x="845" y="475">−</text></g>
+<g fill="#d4af37"><circle cx="820" cy="390" r="11"/><circle cx="820" cy="430" r="11"/><circle cx="820" cy="470" r="11"/></g>
+<path d="M370,320 H560 V390 H820" stroke="#e03131" stroke-width="7" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M370,470 H600 V430 H820" stroke="#7b4b2a" stroke-width="7" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M370,510 H640 V470 H820" stroke="#111111" stroke-width="7" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<g font-size="13" fill="#1d2328" font-weight="700">
+<text x="400" y="310">red: D27-S to S</text>
+<text x="400" y="460">brown: 5V to +</text>
+<text x="400" y="535">black: GND to −</text></g>
+
+<!-- Bornier du relais -->
+<rect x="860" y="500" width="240" height="46" rx="6" fill="#2f6fb5"/>
+<g fill="#d9e6f5"><circle cx="905" cy="523" r="12"/><circle cx="980" cy="523" r="12"/><circle cx="1055" cy="523" r="12"/></g>
+<g font-size="13" font-weight="700" fill="#1d2328" text-anchor="middle"><text x="905" y="494">NO</text><text x="980" y="494">COM</text><text x="1055" y="494">NC</text></g>
+<text x="1055" y="565" font-size="12" fill="#c0392b" text-anchor="middle">unused</text>
+
+<!-- CARTE MOTEUR -->
+<rect x="620" y="620" width="520" height="130" rx="10" fill="#f6efe7" stroke="#b08a5c" stroke-width="2"/>
+<text x="640" y="648" font-size="16" font-weight="700" fill="#1d2328">SPRINT IV control unit: manual switch micro-switch</text>
+<text x="640" y="668" font-size="12" fill="#5c6770">Low voltage (4.98 V at rest). Legs C and D, solder side.</text>
+<g fill="#d4af37"><circle cx="905" cy="700" r="11"/><circle cx="980" cy="700" r="11"/></g>
+<g font-size="14" font-weight="700" fill="#1d2328" text-anchor="middle"><text x="905" y="732">leg C</text><text x="980" y="732">leg D</text></g>
+<path d="M905,546 V689" stroke="#9aa5ad" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M905,546 V689" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M980,546 V689" stroke="#111111" stroke-width="5" fill="none" stroke-linecap="round"/>
+<text x="780" y="620" font-size="13" font-weight="700" fill="#1d2328" text-anchor="end">white</text>
+<text x="1030" y="620" font-size="13" font-weight="700" fill="#1d2328">black</text>
+<text x="640" y="720" font-size="12" fill="#5c6770">White and black wires to C and D, either way round.</text>
+
+<!-- AVERTISSEMENT -->
+<rect x="40" y="680" width="540" height="70" rx="8" fill="#fdecea" stroke="#c0392b" stroke-width="2"/>
+<text x="56" y="708" font-size="14" font-weight="700" fill="#c0392b">No ground link between the ESP32 and the control unit board.</text>
+<text x="56" y="730" font-size="13" fill="#1d2328">The relay is a dry contact: only its 2 wires go to C and D.</text>
+</svg>

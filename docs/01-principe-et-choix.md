@@ -1,5 +1,7 @@
 # 1. Principe et choix
 
+[English version](en/01-principle-and-choices.md)
+
 ## Le but
 
 Ouvrir et fermer la porte de garage **depuis un smartphone en arrivant en voiture**, sur le Wi-Fi de la maison. Un téléphone Android et un iPhone (avec CarPlay filaire) doivent pouvoir le faire.

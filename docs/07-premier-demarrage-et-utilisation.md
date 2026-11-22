@@ -1,5 +1,7 @@
 # 7. Premier démarrage et utilisation
 
+[English version](en/07-first-start-and-use.md)
+
 ## Premier démarrage : le Wi-Fi de réglage
 
 Un ESP32 neuf (ou après un appui long sur BOOT) ouvre son propre Wi-Fi ouvert, nommé **`ESP-Config`** :

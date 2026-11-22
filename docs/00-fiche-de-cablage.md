@@ -1,5 +1,7 @@
 # Fiche de câblage
 
+[English version](en/00-wiring-reference.md)
+
 Référence de câblage de l'ensemble : couleurs des fils, broches des modules, broches de la plaque. **Débrancher l'ESP32 de l'USB avant toute intervention sur un fil.**
 
 ![Schéma de câblage complet](images/schema-cablage-esp32.svg)

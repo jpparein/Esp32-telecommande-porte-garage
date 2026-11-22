@@ -23,7 +23,7 @@
 <text x="347" y="475">5V</text><text x="347" y="515">GND</text>
 </g>
 <text x="60" y="478" font-size="16" font-weight="700" fill="#ffffff">Bloc alimentation</text>
-<text x="60" y="498" font-size="12" fill="#aab3ba">(en bas à gauche de la plaque)</text>
+<text x="60" y="498" font-size="12" fill="#aab3ba">(près du cavalier JUMP)</text>
 <text x="60" y="570" font-size="13" fill="#ffd166">Cavalier « JUMP » sur 3,3 V</text>
 <text x="60" y="600" font-size="13" fill="#ffd166">USB : port USB-C de l'ESP32</text>
 <text x="60" y="622" font-size="12" fill="#aab3ba">(pas celui de la plaque)</text>

@@ -1,5 +1,7 @@
 # 13. L'histoire du projet
 
+[English version](en/13-project-history.md)
+
 Pourquoi ce montage est ainsi, et ce qui a été essayé avant.
 
 ## 1. L'idée
@@ -49,7 +51,6 @@ Faute de pouvoir « écouter » l'interrupteur manuel sans risque d'isolation, l
 - Limite de **20 routes** HTTP : la 21e était ignorée sans erreur. Portée à 32.
 - Un **fil de signal du relais sur la mauvaise rangée** : plus de clic. Toujours repérer D27 par son nom imprimé.
 - Un relais alimenté en **3,3 V** ne colle pas : il faut **5 V**.
-- Les **photos** sans rotation EXIF : à corriger avant publication.
 - **Alimentation depuis la carte du boîtier de commande** : refusée (pas de notice, isolation inconnue).
 
 ## 8. Idées pour la suite

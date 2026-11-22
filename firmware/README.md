@@ -1,5 +1,7 @@
 # Le programme de l'ESP32
 
+[English version](README.en.md)
+
 Dossier [`porte_garage/`](porte_garage). Carte : **ESP32 Dev Module** (`esp32:esp32:esp32`), cœur ESP32 **3.3.12**. Voir le [guide 6](../docs/06-programmer-l-esp32.md) pour compiler et envoyer.
 
 ## Fichiers

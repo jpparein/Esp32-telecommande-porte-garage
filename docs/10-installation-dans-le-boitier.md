@@ -1,5 +1,7 @@
 # 10. Installation dans le boîtier de commande
 
+[English version](en/10-installation.md)
+
 ## Idée
 
 Le relais et le capteur sont dans le boîtier de commande ; l'ESP32 et sa plaque sont fixés **au mur, à côté du boîtier** (photo ci-dessous, de nuit : l'ampoule du boîtier de commande est allumée). Les fils entrent dans le boîtier par le haut.

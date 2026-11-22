@@ -1,5 +1,7 @@
 # 2. Matériel
 
+[English version](en/02-parts.md)
+
 ## Liste des pièces
 
 | Pièce | Rôle | Remarque |

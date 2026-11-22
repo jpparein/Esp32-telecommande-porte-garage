@@ -1,5 +1,7 @@
 # 11. Sécurité et limites
 
+[English version](en/11-security-and-limits.md)
+
 ## Ce qui est protégé
 
 | Sujet | Mesure |

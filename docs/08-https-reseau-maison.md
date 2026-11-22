@@ -1,5 +1,7 @@
 # 8. Adresse HTTPS, réservée au réseau de la maison
 
+[English version](en/08-https-home-network.md)
+
 L'ESP32 parle en HTTP simple. Pour **installer l'appli comme une vraie application** sur Android (et avoir le cadenas), il faut une adresse **HTTPS**. On ajoute donc un « proxy inverse » sur un petit serveur de la maison (ici un Raspberry Pi avec Docker). **Ce guide est facultatif.**
 
 ![Architecture](images/schema-architecture.svg)

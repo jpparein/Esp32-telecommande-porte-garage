@@ -1,5 +1,7 @@
 # 9. Détecteur de mouvement manuel (lumière)
 
+[English version](en/09-manual-movement-detector.md)
+
 ## Le problème
 
 Quand quelqu'un appuie sur le **vrai interrupteur manuel** ou la **télécommande d'origine**, l'ESP32 n'en sait rien : le relais n'est pas touché. L'historique de l'appli manquerait donc des mouvements de porte.

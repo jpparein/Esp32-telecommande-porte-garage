@@ -1,5 +1,7 @@
 # 4. Branchements de l'ESP32
 
+[English version](en/04-esp32-wiring.md)
+
 On branche d'abord **tout sur la table**, sans toucher à la motorisation. Le relais, ses contacts « libres » et le capteur se testent très bien seuls.
 
 ![Montage sur la table](images/montage-banc-essai.jpg)

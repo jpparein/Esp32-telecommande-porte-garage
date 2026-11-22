@@ -1,5 +1,7 @@
 <h1 align="center">Commander sa porte de garage depuis un smartphone avec un ESP32</h1>
 
+<p align="center"><a href="README.en.md">English version</a></p>
+
 <p align="center"><img src="docs/images/photo-accueil.jpg" width="380" alt="Boîtier de commande installé, ESP32 fixé à sa gauche"></p>
 
 <p align="center">
@@ -54,7 +56,7 @@ Au premier accès, saisir le code secret et un prénom : le téléphone est ensu
 - Une **page web hébergée dans l'ESP32** (installable comme une appli sur Android et sur iPhone) avec un gros bouton **Ouvrir** et un bouton **Fermer**.
 - Un **code secret** et un **prénom par téléphone** : l'historique dit qui a donné chaque ordre.
 - Un **historique de 100 évènements** gardé en mémoire (même après une coupure de courant), exportable en CSV.
-- Un **relais** branché en parallèle du interrupteur manuel du boîtier de commande : il fait exactement le même effet qu'un appui.
+- Un **relais** branché en parallèle de l'interrupteur manuel du boîtier de commande : il fait exactement le même effet qu'un appui.
 - Un **capteur de lumière** posé près de l'ampoule du boîtier de commande : si la porte bouge sans ordre de l'appli (interrupteur manuel ou télécommande d'origine), l'historique note « Mouvement manuel ».
 - Un **mode simulation** pour tout tester sans faire bouger la porte.
 - Une **mise à jour sans câble** (OTA) et une **page de configuration** (Wi-Fi, code) sans fichier secret à écrire dans le code.

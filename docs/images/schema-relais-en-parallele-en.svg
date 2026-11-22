@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" font-family="Inter, Arial, sans-serif">
+<title>Principle: the relay in parallel with the manual switch</title>
+<rect width="1100" height="620" fill="#ffffff"/>
+<text x="40" y="44" font-size="26" font-weight="700" fill="#1d2328">The relay has the same effect as a finger on the manual switch</text>
+<text x="40" y="70" font-size="14" fill="#5c6770">Simplified diagram of the "button" input of the SPRINT IV board (low voltage, 4.98 V at rest).</text>
+
+<rect x="40" y="100" width="640" height="470" rx="12" fill="#f6efe7" stroke="#b08a5c" stroke-width="2"/>
+<text x="60" y="130" font-size="16" font-weight="700" fill="#1d2328">SPRINT IV control unit</text>
+
+<line x1="120" y1="190" x2="560" y2="190" stroke="#c0392b" stroke-width="4"/>
+<text x="120" y="178" font-size="14" font-weight="700" fill="#c0392b">+5 V (board logic)</text>
+<line x1="340" y1="190" x2="340" y2="230" stroke="#1d2328" stroke-width="4"/>
+<rect x="322" y="230" width="36" height="70" fill="#ffffff" stroke="#1d2328" stroke-width="4"/>
+<text x="372" y="270" font-size="13" fill="#1d2328">pull-up resistor</text>
+<line x1="340" y1="300" x2="340" y2="340" stroke="#1d2328" stroke-width="4"/>
+<circle cx="340" cy="340" r="8" fill="#d4af37" stroke="#1d2328" stroke-width="2"/>
+<text x="356" y="330" font-size="14" font-weight="700" fill="#1d2328">leg C</text>
+<line x1="340" y1="340" x2="200" y2="340" stroke="#1d2328" stroke-width="4"/>
+<text x="356" y="356" font-size="12" fill="#5c6770">to the unit's processor</text>
+
+<line x1="200" y1="340" x2="200" y2="380" stroke="#1d2328" stroke-width="4"/>
+<circle cx="200" cy="385" r="6" fill="#1d2328"/>
+<line x1="200" y1="385" x2="236" y2="428" stroke="#1d2328" stroke-width="4"/>
+<circle cx="200" cy="445" r="6" fill="#1d2328"/>
+<line x1="200" y1="445" x2="200" y2="500" stroke="#1d2328" stroke-width="4"/>
+<text x="60" y="400" font-size="14" font-weight="700" fill="#1d2328">Manual switch</text>
+<text x="60" y="418" font-size="12" fill="#5c6770">micro-switch</text>
+
+<line x1="340" y1="340" x2="520" y2="340" stroke="#4c8bd4" stroke-width="4"/>
+<line x1="520" y1="340" x2="520" y2="380" stroke="#4c8bd4" stroke-width="4"/>
+<circle cx="520" cy="385" r="6" fill="#4c8bd4"/>
+<line x1="520" y1="385" x2="556" y2="428" stroke="#4c8bd4" stroke-width="4"/>
+<circle cx="520" cy="445" r="6" fill="#4c8bd4"/>
+<line x1="520" y1="445" x2="520" y2="500" stroke="#4c8bd4" stroke-width="4"/>
+<text x="600" y="400" font-size="14" font-weight="700" fill="#2f6fb5" text-anchor="start">Relay contact</text>
+<text x="600" y="418" font-size="12" fill="#2f6fb5">(COM and NO)</text>
+
+<line x1="200" y1="500" x2="520" y2="500" stroke="#1d2328" stroke-width="4"/>
+<circle cx="340" cy="500" r="8" fill="#d4af37" stroke="#1d2328" stroke-width="2"/>
+<text x="356" y="490" font-size="14" font-weight="700" fill="#1d2328">leg D</text>
+<line x1="340" y1="500" x2="340" y2="540" stroke="#1d2328" stroke-width="4"/>
+<text x="356" y="552" font-size="13" fill="#1d2328">board ground (0 V)</text>
+
+<rect x="720" y="100" width="340" height="470" rx="12" fill="#f1f3f5" stroke="#9aa5ad" stroke-width="2"/>
+<text x="740" y="132" font-size="16" font-weight="700" fill="#1d2328">How it works</text>
+<g font-size="14" fill="#1d2328">
+<text x="740" y="166">1. At rest, leg C is pulled up to</text><text x="740" y="186">   +5 V by the resistor.</text>
+<text x="740" y="222">2. Pressing the button connects C to D</text><text x="740" y="242">   (ground): C drops to 0 V.</text>
+<text x="740" y="278">3. The processor sees this drop to 0 V</text><text x="740" y="298">   and starts the movement.</text>
+<text x="740" y="334">4. The relay closes C and D the same</text><text x="740" y="354">   way: same effect, without touching</text><text x="740" y="374">   the button or the safety photocell.</text>
+</g>
+<rect x="740" y="410" width="300" height="130" rx="8" fill="#ffffff" stroke="#9aa5ad"/>
+<text x="756" y="436" font-size="13" font-weight="700" fill="#1d2328">Why a relay is suitable</text>
+<g font-size="13" fill="#1d2328">
+<text x="756" y="458">Dry contact: 10 A / 30 V DC.</text>
+<text x="756" y="478">Only 5 V and a few mA are switched.</text>
+<text x="756" y="498">No ESP32 wire is connected to the</text><text x="756" y="516">board: full isolation.</text>
+</g>
+</svg>

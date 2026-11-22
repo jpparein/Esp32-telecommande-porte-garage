@@ -46,7 +46,7 @@
 <rect x="1030" y="300" width="120" height="110" rx="12" fill="#f6efe7" stroke="#b08a5c" stroke-width="3"/>
 <text x="1090" y="336" text-anchor="middle" font-size="16" font-weight="700" fill="#1d2328">Boîtier de commande</text>
 <text x="1090" y="358" text-anchor="middle" font-size="12" fill="#5c6770">carte SPRINT IV</text>
-<text x="1090" y="376" text-anchor="middle" font-size="12" fill="#5c6770">ampoule 3 min 20</text>
+<text x="1090" y="376" text-anchor="middle" font-size="12" fill="#5c6770">ampoule allumée</text>
 
 <!-- Flèches -->
 <path d="M230,260 L780,260" stroke="#1d2328" stroke-width="3" fill="none" marker-end="url(#a)"/>

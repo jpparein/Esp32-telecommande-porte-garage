@@ -1,5 +1,7 @@
 # 12. Dépannage
 
+[English version](en/12-troubleshooting.md)
+
 ## Le relais ne clique pas, aucune LED
 
 1. **Mode simulation** désactivé ? (bandeau orange = simulation : le relais ne bouge pas.)

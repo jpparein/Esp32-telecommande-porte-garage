@@ -1,5 +1,7 @@
 # 6. Programmer l'ESP32
 
+[English version](en/06-programming-the-esp32.md)
+
 ## Outils
 
 - **Arduino IDE** (ou `arduino-cli`).
@@ -28,7 +30,7 @@ Voir [`firmware/README.md`](../firmware/README.md) pour le détail de chaque par
 ## Règles à connaître
 
 1. **Ne jamais écrire la page HTML dans le `.ino`.** L'outil Arduino y insère des directives `#line` qui cassent le JavaScript. La page est dans `page.h`.
-2. **Après toute modification de `page.h`**, lancer `python firmware/porte_garage/generer_page.py` pour régénérer `page_gzip.h`, puis compile. L'ESP32 envoie la page compressée (environ 10 Ko).
+2. **Après toute modification de `page.h`**, lancer `python firmware/porte_garage/generer_page.py` pour régénérer `page_gzip.h`, puis compiler. L'ESP32 envoie la page compressée (environ 10 Ko).
 3. **Aucun mot de passe dans le code.** Le Wi-Fi et le code secret se règlent depuis la page de configuration (guide 7) et sont gardés dans la mémoire flash de l'ESP32.
 
 ## Première installation (par câble USB)

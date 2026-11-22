@@ -50,7 +50,7 @@
 <text x="1120" y="462" font-size="12" fill="#b91c1c" text-anchor="end">référence − seuil : en dessous = « allumée »</text>
 <line x1="360" y1="395" x2="360" y2="600" stroke="#dc2626" stroke-width="2" stroke-dasharray="3 4"/>
 <text x="368" y="392" font-size="12" font-weight="700" fill="#b91c1c">décision ici</text>
-<text x="560" y="540" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8">ampoule allumée environ 3 min 20 s</text>
+<text x="560" y="540" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8">ampoule allumée plusieurs minutes</text>
 <text x="120" y="614" font-size="12" fill="#5c6770">temps</text>
 <text x="1120" y="614" font-size="12" fill="#5c6770" text-anchor="end">Limite : un second appui pendant que l'ampoule est allumée n'est pas vu.</text>
 </svg>

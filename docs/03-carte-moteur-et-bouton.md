@@ -1,5 +1,7 @@
 # 3. La carte du boîtier de commande et son interrupteur manuel
 
+[English version](en/03-control-unit-board.md)
+
 > **Danger.** Le boîtier de commande contient du **230 V** (cosses du transformateur, partie secteur de la carte). **Couper le courant** (disjoncteur) avant d'ouvrir le boîtier et pour toute soudure. Seules les deux pattes du micro-interrupteur sont à toucher : elles sont en basse tension.
 
 ## Le boîtier

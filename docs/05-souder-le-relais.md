@@ -1,5 +1,7 @@
 # 5. Souder le relais sur le bouton
 
+[English version](en/05-soldering-the-relay.md)
+
 > **Courant coupé au disjoncteur** pour toute cette étape. Vérifier avec le multimètre ou une lampe que la motorisation n'est plus alimentée avant de toucher la carte.
 
 ## Principe
@@ -35,7 +37,7 @@ Il est déconseillé de pincer une broche Dupont dans le bornier à vis : le con
 
 1. Multimètre en **continuité**.
 2. Poser les deux pointes sur les **deux vis COM et NO** du bornier du relais.
-3. **Appuyer sur le interrupteur manuel** du boîtier de commande : le multimètre doit **biper** pendant l'appui et se taire au relâchement.
+3. **Appuyer sur l'interrupteur manuel** du boîtier de commande : le multimètre doit **biper** pendant l'appui et se taire au relâchement.
 
 ![Test de continuité sur le bornier](images/relais-test-continuite.jpg)
 
