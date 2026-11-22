@@ -2,9 +2,9 @@
 
 [English version](en/04-esp32-wiring.md)
 
-On branche d'abord **tout sur la table**, sans toucher à la motorisation. Le relais, ses contacts « libres » et le capteur se testent très bien seuls.
+Le montage se réalise d'abord **hors installation** (en banc d'essai), sans toucher à la motorisation. Le relais, ses contacts « libres » et le capteur se testent très bien seuls.
 
-![Montage sur la table](images/montage-banc-essai.jpg)
+![Montage en banc d'essai](images/montage-banc-essai.jpg)
 
 Référence rapide : [fiche de câblage](00-fiche-de-cablage.md) (couleurs des fils).
 

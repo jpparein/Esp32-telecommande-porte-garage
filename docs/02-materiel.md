@@ -54,7 +54,7 @@ Le petit **bloc de broches repéré 5V / 3.3V / GND**, près du cavalier JUMP, d
 ![Relais KY-019](images/relais-ky019.jpg)
 
 - Côté commande (3 broches) : **S** (signal), **+** (milieu), **−**.
-- Côté puissance (bornier à vis) : **NO** (normalement ouvert), **COM** (commun), **NC** (normalement fermé). On utilise **COM** et **NO**.
+- Côté puissance (bornier à vis) : **NO** (normalement ouvert), **COM** (commun), **NC** (normalement fermé). Seuls **COM** et **NO** sont utilisés.
 
 ![Repérage du bornier NO / COM / NC](images/relais-bornier-NO-COM-NC.jpg)
 

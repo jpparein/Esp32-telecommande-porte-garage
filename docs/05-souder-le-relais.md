@@ -6,7 +6,7 @@
 
 ## Principe
 
-On relie les deux contacts du relais (**COM** et **NO**) aux deux pattes **C** et **D** du micro-interrupteur (guide 3). Le sens ne compte pas : COM peut aller sur C ou sur D.
+Les deux contacts du relais (**COM** et **NO**) sont reliés aux deux pattes **C** et **D** du micro-interrupteur (guide 3). Le sens ne compte pas : COM peut aller sur C ou sur D.
 
 ![Principe : le relais en parallèle du bouton](images/schema-relais-en-parallele.svg)
 

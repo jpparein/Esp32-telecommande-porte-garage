@@ -2,7 +2,7 @@
 
 [Version française](../04-branchements-esp32.md)
 
-Everything is wired first **on the table**, without touching the motorisation. The relay, its "free" contacts and the sensor can be tested perfectly well on their own.
+The assembly is first built **away from the installation** (as a bench test), without touching the motorisation. The relay, its "free" contacts and the sensor can be tested perfectly well on their own.
 
 ![Bench setup](../images/montage-banc-essai.jpg)
 
