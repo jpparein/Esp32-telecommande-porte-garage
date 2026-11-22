@@ -61,6 +61,6 @@ Le code est dans [`firmware/`](firmware/README.md). Une page de démonstration d
 - Relais KY-019 (SRD-05VDC), capteur de lumière KY-018.
 - Motorisation de porte sectionnelle de marque Sectio-Tech (boîtier de commande au mur, moteur sur la porte), carte électronique « SPRINT IV » (réf. 11515 Rev K). **La carte peut être différente** : le guide 3 explique comment trouver le bouton à doubler.
 
-## Licence et responsabilité
+## Responsabilité
 
-Aucune licence n'est encore choisie (à ajouter avant publication). Ce montage agit sur une porte motorisée : l'utilisation se fait sous la seule responsabilité de l'utilisateur. Vérifier que la porte s'arrête bien sur un obstacle (cellule de sécurité) avant toute utilisation.
+Ce montage agit sur une porte motorisée : il est réalisé et utilisé sous la seule responsabilité de l'utilisateur. Avant toute utilisation, vérifier que la porte s'arrête bien sur un obstacle (cellule de sécurité). Les documents de ce dépôt sont fournis tels quels, sans garantie.
