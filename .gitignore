@@ -1,0 +1,10 @@
+secrets.h
+*.local.h
+build/
+*.bin
+*.elf
+*.map
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

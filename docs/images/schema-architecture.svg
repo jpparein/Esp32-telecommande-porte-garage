@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Inter, Arial, sans-serif">
+<title>Architecture : du téléphone à la porte</title>
+<defs>
+<marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d2328"/></marker>
+</defs>
+<rect width="1200" height="560" fill="#ffffff"/>
+<text x="40" y="44" font-size="26" font-weight="700" fill="#1d2328">Du téléphone à la porte</text>
+<text x="40" y="70" font-size="14" fill="#5c6770">Tout reste dans la maison. Aucun accès depuis Internet.</text>
+
+<!-- Zone maison -->
+<rect x="30" y="90" width="1140" height="380" rx="14" fill="#f8fafb" stroke="#9aa5ad" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="50" y="118" font-size="13" font-weight="700" fill="#5c6770">RÉSEAU DE LA MAISON (192.168.x.0/24)</text>
+
+<!-- Téléphone -->
+<rect x="60" y="200" width="170" height="170" rx="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+<text x="145" y="250" text-anchor="middle" font-size="17" font-weight="700" fill="#075985">Téléphone</text>
+<text x="145" y="276" text-anchor="middle" font-size="13" fill="#075985">Android ou iPhone</text>
+<text x="145" y="296" text-anchor="middle" font-size="13" fill="#075985">sur le Wi-Fi maison</text>
+<text x="145" y="330" text-anchor="middle" font-size="12" fill="#075985">cookie « t » (code secret)</text>
+
+<!-- Proxy -->
+<rect x="400" y="140" width="220" height="100" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+<text x="510" y="176" text-anchor="middle" font-size="16" font-weight="700" fill="#5b21b6">Proxy HTTPS (facultatif)</text>
+<text x="510" y="198" text-anchor="middle" font-size="13" fill="#5b21b6">Nginx Proxy Manager sur le Pi</text>
+<text x="510" y="218" text-anchor="middle" font-size="13" fill="#5b21b6">liste d'accès : maison seulement</text>
+
+<!-- ESP32 -->
+<rect x="780" y="170" width="190" height="230" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+<text x="875" y="204" text-anchor="middle" font-size="18" font-weight="700" fill="#166534">ESP32</text>
+<g font-size="13" fill="#166534" text-anchor="middle">
+<text x="875" y="232">http://esp-acces.local : port 80</text>
+<text x="875" y="256">page web + code secret</text>
+<text x="875" y="276">historique (flash, 100 lignes)</text>
+<text x="875" y="302" font-weight="700">D27 : sortie relais</text>
+<text x="875" y="324" font-weight="700">D34 : capteur de lumière</text>
+<text x="875" y="352">Wi-Fi « ESP-Config » (réglage)</text>
+</g>
+
+<!-- Relais -->
+<rect x="1030" y="150" width="120" height="100" rx="12" fill="#e8f1fb" stroke="#2f6fb5" stroke-width="3"/>
+<text x="1090" y="190" text-anchor="middle" font-size="16" font-weight="700" fill="#1d4f8f">Relais</text>
+<text x="1090" y="212" text-anchor="middle" font-size="12" fill="#1d4f8f">KY-019, 5 V</text>
+<text x="1090" y="230" text-anchor="middle" font-size="12" fill="#1d4f8f">contact C-D</text>
+
+<!-- Boîtier de commande -->
+<rect x="1030" y="300" width="120" height="110" rx="12" fill="#f6efe7" stroke="#b08a5c" stroke-width="3"/>
+<text x="1090" y="336" text-anchor="middle" font-size="16" font-weight="700" fill="#1d2328">Boîtier de commande</text>
+<text x="1090" y="358" text-anchor="middle" font-size="12" fill="#5c6770">carte SPRINT IV</text>
+<text x="1090" y="376" text-anchor="middle" font-size="12" fill="#5c6770">ampoule 3 min 20</text>
+
+<!-- Flèches -->
+<path d="M230,260 L780,260" stroke="#1d2328" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<text x="400" y="282" font-size="13" fill="#1d2328">HTTP direct (secours)</text>
+<path d="M230,230 L400,200" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 5" marker-end="url(#a)"/>
+<text x="250" y="200" font-size="13" fill="#5b21b6">HTTPS</text>
+<path d="M620,200 L780,220" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 5" marker-end="url(#a)"/>
+<text x="650" y="194" font-size="13" fill="#5b21b6">HTTP</text>
+<path d="M970,200 L1028,200" stroke="#1d2328" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<text x="975" y="190" font-size="11" fill="#1d2328">3 fils</text>
+<path d="M1090,250 L1090,298" stroke="#1d2328" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<text x="1100" y="278" font-size="11" fill="#1d2328">2 fils</text>
+<path d="M1030,330 C990,330 990,350 972,350" stroke="#f2a600" stroke-width="3" fill="none" stroke-dasharray="3 5"/>
+<text x="880" y="430" font-size="12" fill="#b9770e">lumière de l'ampoule lue par le capteur (sans contact)</text>
+
+<!-- Légende -->
+<rect x="40" y="490" width="1120" height="50" rx="8" fill="#f1f3f5"/>
+<text x="56" y="512" font-size="13" fill="#1d2328">Trait plein : accès HTTP direct. Pointillé violet : par le proxy en HTTPS (nécessaire pour installer l'appli sur Android).</text>
+<text x="56" y="531" font-size="13" fill="#1d2328">Le relais n'a aucun fil relié à la masse du boîtier de commande : il ne fait que fermer C et D.</text>
+</svg>

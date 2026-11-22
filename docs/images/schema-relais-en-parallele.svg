@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" font-family="Inter, Arial, sans-serif">
+<title>Principe : le relais en parallèle de l'interrupteur manuel</title>
+<rect width="1100" height="620" fill="#ffffff"/>
+<text x="40" y="44" font-size="26" font-weight="700" fill="#1d2328">Le relais fait le même effet qu'un doigt sur l'interrupteur manuel</text>
+<text x="40" y="70" font-size="14" fill="#5c6770">Schéma simplifié de l'entrée « bouton » de la carte SPRINT IV (basse tension, 4,98 V au repos).</text>
+
+<rect x="40" y="100" width="640" height="470" rx="12" fill="#f6efe7" stroke="#b08a5c" stroke-width="2"/>
+<text x="60" y="130" font-size="16" font-weight="700" fill="#1d2328">Boîtier de commande SPRINT IV</text>
+
+<line x1="120" y1="190" x2="560" y2="190" stroke="#c0392b" stroke-width="4"/>
+<text x="120" y="178" font-size="14" font-weight="700" fill="#c0392b">+5 V (logique de la carte)</text>
+<line x1="340" y1="190" x2="340" y2="230" stroke="#1d2328" stroke-width="4"/>
+<rect x="322" y="230" width="36" height="70" fill="#ffffff" stroke="#1d2328" stroke-width="4"/>
+<text x="372" y="270" font-size="13" fill="#1d2328">résistance de rappel</text>
+<line x1="340" y1="300" x2="340" y2="340" stroke="#1d2328" stroke-width="4"/>
+<circle cx="340" cy="340" r="8" fill="#d4af37" stroke="#1d2328" stroke-width="2"/>
+<text x="356" y="330" font-size="14" font-weight="700" fill="#1d2328">patte C</text>
+<line x1="340" y1="340" x2="200" y2="340" stroke="#1d2328" stroke-width="4"/>
+<text x="356" y="356" font-size="12" fill="#5c6770">vers le processeur du boîtier</text>
+
+<line x1="200" y1="340" x2="200" y2="380" stroke="#1d2328" stroke-width="4"/>
+<circle cx="200" cy="385" r="6" fill="#1d2328"/>
+<line x1="200" y1="385" x2="236" y2="428" stroke="#1d2328" stroke-width="4"/>
+<circle cx="200" cy="445" r="6" fill="#1d2328"/>
+<line x1="200" y1="445" x2="200" y2="500" stroke="#1d2328" stroke-width="4"/>
+<text x="60" y="400" font-size="14" font-weight="700" fill="#1d2328">Interrupteur manuel</text>
+<text x="60" y="418" font-size="12" fill="#5c6770">micro-interrupteur</text>
+
+<line x1="340" y1="340" x2="520" y2="340" stroke="#4c8bd4" stroke-width="4"/>
+<line x1="520" y1="340" x2="520" y2="380" stroke="#4c8bd4" stroke-width="4"/>
+<circle cx="520" cy="385" r="6" fill="#4c8bd4"/>
+<line x1="520" y1="385" x2="556" y2="428" stroke="#4c8bd4" stroke-width="4"/>
+<circle cx="520" cy="445" r="6" fill="#4c8bd4"/>
+<line x1="520" y1="445" x2="520" y2="500" stroke="#4c8bd4" stroke-width="4"/>
+<text x="600" y="400" font-size="14" font-weight="700" fill="#2f6fb5" text-anchor="start">Contact du relais</text>
+<text x="600" y="418" font-size="12" fill="#2f6fb5">(COM et NO)</text>
+
+<line x1="200" y1="500" x2="520" y2="500" stroke="#1d2328" stroke-width="4"/>
+<circle cx="340" cy="500" r="8" fill="#d4af37" stroke="#1d2328" stroke-width="2"/>
+<text x="356" y="490" font-size="14" font-weight="700" fill="#1d2328">patte D</text>
+<line x1="340" y1="500" x2="340" y2="540" stroke="#1d2328" stroke-width="4"/>
+<text x="356" y="552" font-size="13" fill="#1d2328">masse de la carte (0 V)</text>
+
+<rect x="720" y="100" width="340" height="470" rx="12" fill="#f1f3f5" stroke="#9aa5ad" stroke-width="2"/>
+<text x="740" y="132" font-size="16" font-weight="700" fill="#1d2328">Comment ça marche</text>
+<g font-size="14" fill="#1d2328">
+<text x="740" y="166">1. Au repos, la patte C est tirée à</text><text x="740" y="186">   +5 V par la résistance.</text>
+<text x="740" y="222">2. Un appui sur le bouton relie C à D</text><text x="740" y="242">   (masse) : C passe à 0 V.</text>
+<text x="740" y="278">3. Le processeur voit ce passage à 0 V</text><text x="740" y="298">   et lance le mouvement.</text>
+<text x="740" y="334">4. Le relais ferme C et D de la même</text><text x="740" y="354">   façon : même effet, sans toucher</text><text x="740" y="374">   au bouton ni à la cellule de sécurité.</text>
+</g>
+<rect x="740" y="410" width="300" height="130" rx="8" fill="#ffffff" stroke="#9aa5ad"/>
+<text x="756" y="436" font-size="13" font-weight="700" fill="#1d2328">Pourquoi un relais convient</text>
+<g font-size="13" fill="#1d2328">
+<text x="756" y="458">Contact sec : 10 A / 30 V DC.</text>
+<text x="756" y="478">On ne commute que 5 V, quelques mA.</text>
+<text x="756" y="498">Aucun fil de l'ESP32 n'est relié à la</text><text x="756" y="516">carte : isolation totale.</text>
+</g>
+</svg>
